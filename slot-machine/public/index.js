@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]);
     if(!interval) {
       interval = setInterval(() => {
-        navigator.vibrate(20)
+        navigator.vibrate(40)
       },200)
     }
   }
