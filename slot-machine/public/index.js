@@ -58,7 +58,6 @@ window.addEventListener('DOMContentLoaded', () => {
     audio.play();
     // navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]);
     if(!interval) {
-
       interval = setInterval(() => {
         navigator.vibrate(20)
       },200)
@@ -67,9 +66,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const stopAudio = () => {
     setTimeout(() => {
-
       audio.pause();
-      clearInterval(interval)
+      clearInterval(interval);
+      interval = null;
     }, 3000);
   }
 
