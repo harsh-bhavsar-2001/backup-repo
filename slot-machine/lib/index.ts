@@ -191,12 +191,13 @@ export default class SlotMachine {
     return delay;
   }
 
-  shuffle(spins: number) {
+  shuffle(spins: number, forceStop) {
     if (this.running || this.stopping) {
       return;
     }
 
-    this.nextActive = 0;
+    // set bulow number for cheat mode
+    this.nextActive = forceStop ? --forceStop : this.options.randomize(this.active, this.container.tiles.length);
     this.remainingSpins = spins;
 
     return this._shuffle();

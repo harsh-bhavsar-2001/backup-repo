@@ -20,8 +20,8 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div class="position-relative" style="width: 302px;margin: auto;">
+<body style="height: 100;">
+  <div class="position-relative" style="width: 302px;margin: auto; height: 100%; display: flex; justify-content: center; align-items: center; margin-top: 80px;">
     <img src="./img/slot-machine-19052477.png" alt="" class="w-100">
     <div class="game d-flex justify-content-center" style="gap: 18px;">
       <div id="casino1" class="slotMachine flex-shrink-0">
@@ -52,10 +52,18 @@
       </div>
     </div>
   </div>
-  <div class="btn-group btn-group-justified" role="group">
-    <button id="casinoShuffle" type="button" class="btn btn-primary btn-lg">Shuffle!</button>
-    <button id="casinoStop" type="button" class="btn btn-primary btn-lg">Stop!</button>
+  <div class="btn-group btn-group-justified" role="group" style="position: absolute;
+  top: 480px;
+  left: 808px;">
+    <button id="play" class="btn btn-primary btn-lg">Play !</button>
   </div>
+
+
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 90px;">
+    Cheat Number: <input id="cheat" type="number" style="margin-right: 50px; margin-left: 10px;"> <br>
+    Cheat Chart: <img src="./img/Screenshot_5.png" alt="src" height="200px" >
+  </div>
+  <audio id="previewaudio" loop></audio>
   <script src="./index.js"></script>
 </body>
 
