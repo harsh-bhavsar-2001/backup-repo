@@ -36,18 +36,27 @@ window.addEventListener('DOMContentLoaded', () => {
   const casino1 = new SlotMachine(casino1Element, {
     active: 0,
     delay: 500,
-    direction: 'up'
+    direction: 'up',
+    // randomize() {
+    //   return 1;
+    // },
   });
   const casino2 = new SlotMachine(casino2Element, {
     active: 1,
     delay: 600,
-    direction: 'up'
+    direction: 'up',
+    // randomize() {
+    //   return 1;
+    // },
   });
   const casino3 = new SlotMachine(casino3Element, {
     active: 2,
     delay: 700,
     direction: 'up',
-    callback: playEventCallBack
+    callback: playEventCallBack,
+    // randomize() {
+    //   return 1;
+    // },
   });
 
 
