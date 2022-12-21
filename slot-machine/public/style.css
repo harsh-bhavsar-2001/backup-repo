@@ -55,8 +55,8 @@ h1 {
 }
 
 .slotMachine {
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   /* border: 2.5px solid #cf5178; */
   /* display: inline-block; */
 }
@@ -77,9 +77,10 @@ h1 {
 }
 
 .slotMachine .slot {
-  height: 65px;
-  width: 65px;
-  /* background-position-x: 55%; */
+  height: 45px;
+  width: 45px;
+  border-radius: 4px;
+  /* background-posistion-x: 55%; */
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -115,5 +116,5 @@ h1 {
 .game {
   position: absolute;
   top: 50%;
-  transform: translateY(calc(-50% - 8px));
+  transform: translateY(-50%);
 }
