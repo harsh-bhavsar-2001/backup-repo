@@ -9,6 +9,7 @@ export const DEFAULTS: Required<Options> = {
   delay: 200, // Animation time [Number]
   randomize: (_, max) => randomInteger(0, max), // Randomize function, must return a number with the selected position
   direction: 'down', // Animation direction ['up'||'down']
+  callback: () => {}
 };
 
 export enum CONTAINER_FX {
